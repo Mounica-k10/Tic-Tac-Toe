@@ -1,58 +1,105 @@
-Tic-Tac-Toe
-About the Project
+# Tic-Tac-Toe
 
-This is a simple Tic-Tac-Toe game developed using HTML, CSS, and JavaScript.
+This is a simple Tic-Tac-Toe game developed using **HTML, CSS, and JavaScript**. The game can be played either against the computer or with another player.
 
-The game has a 3 × 3 board where two players can play against each other. Players take turns placing their symbols on the board. The game checks the board after each move and displays the winner when one player gets three symbols in a row.
+The main focus of this project was to create a simple and interactive game interface using HTML and CSS and implement the game functionality using JavaScript.
 
-Technologies Used
-HTML
-CSS
-JavaScript
-Features
-3 × 3 Tic-Tac-Toe game board
-Two-player gameplay
-Checks for winning combinations
-Displays the winner
-Detects draw conditions
-Reset option to start a new game
-Project Files
+## Features
 
-TIC-TAC-TOE/
+* One Player mode to play against the computer
+* Two Player mode for playing with another person
+* 3 × 3 Tic-Tac-Toe board
+* Displays the current player's turn
+* Checks for a winner after every move
+* Detects a draw when all the boxes are filled
+* Simple and easy-to-use interface
 
+## Game Modes
+
+### One Player
+
+In One Player mode, the user plays against the computer.
+
+The player makes a move by selecting an empty box, and the computer automatically makes its move after that.
+
+### Two Player
+
+In Two Player mode, two players can play on the same device.
+
+* Player 1 plays as **X**
+* Player 2 plays as **O**
+
+The game changes the turn between the two players after each move.
+
+## How the Game Works
+
+The game board contains 9 boxes arranged in a 3 × 3 layout.
+
+When a player selects a box, the move is recorded and the game checks the possible winning combinations.
+
+A player wins when the same symbol appears in:
+
+* Any row
+* Any column
+* The main diagonal
+* The opposite diagonal
+
+If all the boxes are filled and no player has a winning combination, the game ends in a draw.
+
+## Technologies Used
+
+* **HTML5** – Used to create the structure of the game.
+* **CSS3** – Used to design the game board, buttons, text, and overall layout.
+* **JavaScript** – Used to implement the game logic, player moves, computer moves, turn changes, winner checking, and draw detection.
+
+## Project Structure
+
+```text
+Tic-Tac-Toe/
+│
 ├── project.html
 ├── project.css
 ├── project.js
-└── README.md
+└── .vscode/
+    └── settings.json
+```
 
-Files Description
-project.html
+### project.html
 
-Contains the structure of the Tic-Tac-Toe game and the 3 × 3 game board.
+Contains the structure of the webpage, including the game mode selection and Tic-Tac-Toe board.
 
-project.css
+### project.css
 
-Contains the styling and layout of the game board and other elements.
+Contains the styling of the game, including the board layout, buttons, text, and overall appearance.
 
-project.js
+### project.js
 
-Contains the game logic, including player turns, checking the winner, and resetting the game.
+Contains the main functionality of the game, such as:
 
-How to Run
-Download or clone the repository.
-Open the project folder.
-Open project.html in a web browser.
-Start playing the game.
+* Selecting the game mode
+* Handling player moves
+* Handling computer moves
+* Changing turns
+* Checking winning conditions
+* Checking for a draw
+* Updating the game status
 
-No additional software or packages are required to run this project.
+## How to Run the Project
 
-How to Play
-The game starts with the first player.
-Click on an empty cell on the 3 × 3 board to place your symbol.
-Players take turns making their moves.
-The player who gets three symbols in a row, column, or diagonal wins the game.
-If all the cells are filled and there is no winner, the game ends in a draw.
-Use the reset option to start a new game.
-Conclusion
+1. Download or clone the project.
+2. Open the project folder in VS Code.
+3. Open `project.html` in a web browser.
 
-This project helped me understand how HTML, CSS, and JavaScript work together to create an interactive web application. It also helped me practice JavaScript logic and handling user interactions.
+You can also use the **Live Server** extension in VS Code to run the project.
+
+## How to Play
+
+1. Open the game in a browser.
+2. Select either **One Player** or **Two Player** mode.
+3. Click on an empty box to make a move.
+4. In One Player mode, the computer will make its move automatically.
+5. Continue playing until a player wins or the game ends in a draw.
+
+## Conclusion
+
+This Tic-Tac-Toe project helped in understanding the basics of **HTML, CSS, and JavaScript** by combining them to create an interactive game. It also helped in understanding concepts such as user interactions, game logic, conditional statements, and handling events in JavaScript.
